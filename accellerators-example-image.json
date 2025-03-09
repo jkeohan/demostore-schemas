@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://accellerators.com/example-image",
+    "title": "Image",
+    "description": "Image schema",
+    "$comment": "Docs: https://amplience.com/docs/development/schema-examples/blog/readme.html#blogimage",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "type": "object",
+    "properties": {
+        "image": {
+            "title": "Image",
+            "description": "insert an image",
+            "type": "object",
+            "anyOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+                }
+            ]
+        },
+        "altText": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 150,
+            "title": "Alt text",
+            "description": "insert image alt text"
+        }
+    },
+    "propertyOrder": [
+        "image",
+        "altText"
+    ],
+    "required": [
+        "image",
+        "altText"
+    ]
+}
