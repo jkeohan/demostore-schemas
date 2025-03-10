@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://cdn.jsdelivr.net/gh/jkeohan/demostore-schemas@main/accellerators-example-image.json",
+    "$id": "https://raw.githubusercontent.com/jkeohan/demostore-schemas/main/accellerators-example-image.json",
     "title": "Image",
     "description": "Image schema",
     "$comment": "Docs: https://amplience.com/docs/development/schema-examples/blog/readme.html#blogimage",
